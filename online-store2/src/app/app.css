@@ -1,0 +1,47 @@
+﻿:host {
+  display: block;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+h2 {
+  margin: 12px 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.category-btn {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.category-btn.active {
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
+}
+
+.welcome {
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  padding: 12px;
+  color: #475569;
+}
