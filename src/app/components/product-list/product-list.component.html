@@ -1,0 +1,12 @@
+<section class="catalog">
+  <header class="hero">
+    <h1>Онлайн-магазин Kaspi</h1>
+    <p>Подборка реальных товаров с kaspi.kz. Можно открыть товар и поделиться ссылкой.</p>
+  </header>
+
+  <div class="grid">
+    @for (product of products; track product.id) {
+    <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
+</section>

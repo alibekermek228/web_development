@@ -1,0 +1,37 @@
+﻿<article class="card">
+  <div class="gallery">
+    <img [src]="currentImage" [alt]="product.name" class="main-image" />
+
+    <div class="thumbs">
+      @for (img of product.images; track img) {
+      <button
+        type="button"
+        class="thumb-btn"
+        [class.active]="currentImage === img"
+        (click)="selectImage(img)">
+        <img [src]="img" [alt]="product.name + ' image'" class="thumb-image" />
+      </button>
+      }
+    </div>
+  </div>
+
+  <div class="content">
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+
+    <p class="price">{{ product.price | currency : 'KZT' : 'symbol' : '1.0-0' }}</p>
+
+    <div class="rating" aria-label="Product rating">
+      @for (star of stars; track star) {
+      <span [class.filled]="isFilledStar(star)">&#9733;</span>
+      }
+      <span class="rating-value">{{ product.rating | number : '1.1-1' }}</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" [href]="product.link" target="_blank" rel="noopener noreferrer">Открыть в Kaspi</a>
+      <a class="btn success" [href]="buildWhatsappUrl()" target="_blank" rel="noopener noreferrer">Поделиться в WhatsApp</a>
+      <a class="btn info" [href]="buildTelegramUrl()" target="_blank" rel="noopener noreferrer">Поделиться в Telegram</a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,32 @@
+﻿.catalog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  color: #0f172a;
+}
+
+.hero p {
+  margin: 0.4rem 0 0;
+  color: #475569;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.grid app-product-card {
+  display: block;
+  height: 100%;
+}
