@@ -1,0 +1,30 @@
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}

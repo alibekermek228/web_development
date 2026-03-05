@@ -1,0 +1,88 @@
+.detail-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.back-link {
+  width: fit-content;
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.detail-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.meta-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+button,
+.secondary-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-weight: 600;
+}
+
+button {
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.secondary-btn {
+  text-decoration: none;
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.state {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
+.state.error {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.state.success {
+  color: #166534;
+  background: #dcfce7;
+}

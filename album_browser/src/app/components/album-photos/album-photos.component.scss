@@ -1,0 +1,53 @@
+.photos-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.back-link {
+  width: fit-content;
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+}
+
+.state {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
+.state.error {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.photo-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #374151;
+  line-height: 1.4;
+}
